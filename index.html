@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Slopes Villa Hotel</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- booking form css file -->
+  <link href="css/bookingform.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <link href="css/bootsnipp.css" rel="stylesheet">
+
+
+<!-- =======================================================
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  Author: BootstrapMade.com
+  Author URL: https://bootstrapmade.com
+======================================================= -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+  <div id="preloader"></div>
+
+<!--==========================
+  Hero Section
+============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <img class="" src="img/logo4.png" alt="Slopes Villa">
+        </div>
+
+        <h1>Welcome to Our Website</h1>
+        <h2>We offer <span class="rotating">quality services, beautiful accommodation, value for your money</span></h2>
+        <div class="actions">
+          <a href="#RoomBook" class="btn-get-started">Book Now</a>
+          <!-- <a href="#RoomBook">Open Modal</a> -->
+          <!-- booking form -->
+
+          <div id="RoomBook" class="Bookings">
+            <div>
+                <a href="#close" title="close" class="close">X</a>
+
+                <form id="booking-form" class="booking-form" name="form1" method="post" action="">
+                      <!-- <div align="center"><img class="logo" src="img/example_logo.png" title="Example Logo" alt="Example Logo"></div> -->
+                      <div class="h1">Hotel Reservation Form</div>
+                      <div id="form-message" class="message hide">
+                          Thank you for your enquiry!
+                      </div>
+                      <div id="form-content">
+                          <div class="group">
+                              <label for="date-from">From</label>
+                              <div class="addon-right">
+                                  <input id="date-from" name="date-from" class="form-control" type="text">
+                                  <i class="fa fa-calendar"></i>
+                              </div>
+                          </div>
+                          <div class="group">
+                              <label for="date-to">To</label>
+                              <div class="addon-right">
+                                  <input id="date-to" name="date-to" class="form-control" type="text">
+                                  <i class="fa fa-calendar"></i>
+                              </div>
+                          </div>
+                          <div class="group">
+                              <label for="room-type">Room type</label>
+                              <div>
+                                  <select id="room-type" name="room-type" class="form-control">
+                                      <option value="Single room">Single room</option>
+                                      <option value="Double room">Double room</option>
+                                      <option value="Apartment">Apartment</option>
+                                  </select>
+                              </div>
+                          </div>
+
+                          <div class="group">
+                              <label for="room-requirements">Room requirements</label>
+                              <div>
+                                  <select id="room-requirements" name="room-requirements" class="form-control">
+                                      <option value="No Preference">No Preference</option>
+                                      <option value="Non Smoking">Non Smoking</option>
+                                      <option value="Smoking">Smoking</option>
+                                  </select>
+                              </div>
+                          </div>
+
+
+
+
+                          <div class="group">
+                              <label for="adults">Adults</label>
+                              <div>
+                                  <select id="adults" name="adults" class="form-control">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="group">
+                              <label for="children">Children</label>
+                              <div>
+                                  <select id="children" name="children" class="form-control">
+                                      <option value="-">-</option>
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="group">
+                              <label for="name">Name</label>
+                              <div><input id="name" name="name" class="form-control" type="text" placeholder="Name"></div>
+                          </div>
+                          <div class="group">
+                              <label for="email">Email</label>
+                              <div><input id="email" name="email" class="form-control" type="email" placeholder="Email"></div>
+                          </div>
+                          <div class="group">
+                              <label for="phone">Phone</label>
+                              <div><input id="phone" name="phone" class="form-control" type="text" placeholder="Phone"></div>
+                          </div>
+                          <div class="group">
+                              <label for="special-requirements">Special requirements</label>
+                              <div><textarea id="special-requirements" name="special-requirements" class="form-control" cols="" rows="5" placeholder="Special requirements"></textarea></div>
+                          </div>
+                          <div class="group submit">
+                              <label class="empty"></label>
+                              <div><input name="submit" type="submit" value="Submit"/></div>
+                          </div>
+                      </div>
+                      <div id="form-loading" class="hide"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+                  </form>
+
+            </div>
+          </div>
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+          <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+          <script src="js/plugins.js"></script>
+          <script src="js/main.js"></script>
+          <!-- end of form -->
+
+
+
+          <a href="#services" class="btn-services">Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Header Section
+============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo5.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+
+
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+  <!--        <li><a href="#team">Team</a></li>
+          <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="menu-has-children"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+
+-->
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<!--==========================
+  About Section
+============================-->
+  <section id="about">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">About Us</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">We help millions of travellers each month to find the perfect hotel for both holiday and business trips, always with the best discounts and special offers.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6 about-content">
+          <h2 class="about-title">We provide great services</h2>
+          <p class="about-text text-justify">
+            The Slopes Villa Hotel is the right choice for visitors who are searching for a combination of peace and quiet, and a convenient position from which to explore Embu. It is a small, comfortable hotel, situated alon the Embu-Meru Highway. We, as the Slopes Villa family andstaff offer an attentive, personalized service and are always available to offer any help to our guests.
+          </p>
+          <p class="about-text text-justify">
+            The hotel is arranged on four floors, without a lift. On the ground floor, apart from the reception, there is a comfortable lounge where you can sit and drink tea, or just read. There is also a splendid terrace, where, you can relax and immerge yourself from morning onwards in the atmosphere of Embu daily life.
+          </p>
+          <p class="about-text text-justify">
+            Complimentary buffet breakfast is served daily. Local and continental meals are served at the onsite restaurant, while guests order a variety of drinks at the bar. There is a beautiful terrace available on the top floor from where you can enjoy the wonderful view. Outdoor dining is also availabe on a patio . We also house an outdoor pool as well as provide Wi-Fi service.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Services Section
+============================-->
+  <section id="services">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Our Services</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">The services you should expect during your stay on you being receieved by our concierge service are as follows</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-user-circle"></i></div>
+          <h4 class="service-title"><a href="">24-Hour Front Desk</a></h4>
+          <p class="service-description">We pride ourselves in you enjoying your stay, our front dest is always ready to tend to your needs whenever you need</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-wifi"></i></div>
+          <h4 class="service-title"><a href="">WiFi Internet</a></h4>
+          <p class="service-description">Life with internet can sometimes suck, so we provide you with WiFi internet for your needs; work or entertainment</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-sun-o"></i></div>
+          <h4 class="service-title"><a href="">Swimming Pool</a></h4>
+          <p class="service-description">You can always feel free to cool yourself off through the hot days with a swim in our swimming pool</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-lock fa-fw" aria-hidden="true"></i></div>
+          <h4 class="service-title"><a href="">Safety Deposit Boxes</a></h4>
+          <p class="service-description">We take the security oof your goods seriously, we peovide clients with safety deposit boxes for their valuable goods</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-retweet"></i></div>
+          <h4 class="service-title"><a href=""> Laundry Cleaning</a></h4>
+          <p class="service-description">We have a room service team that is dedicated to ensuring the cleanliness of not just your room and your clothes</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-meetup"></i></div>
+          <h4 class="service-title"><a href="">Event facilities</a></h4>
+          <p class="service-description">Whether its a birthday or business meetins and everything in between, we have set up a room for your confrence/meeting needs</p>
+        </div>
+           <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-car"></i></div>
+          <h4 class="service-title"><a href="">Car Hire</a></h4>
+          <p class="service-description">Should you need a car to travel to places during your stay, we will provide you with car rental services</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-plane fa-fw" aria-hidden="true"></i></div>
+          <h4 class="service-title"><a href="">Airport Shuttle</a></h4>
+          <p class="service-description">We also provide airport shuttle services during your departure, which comes in handy since the airport is quite far</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
+          <h4 class="service-title"><a href="">Baggage Storage Room</a></h4>
+          <p class="service-description">Your baggages are imporant to us, we make sure to always keep them safe for you whie you stay with us</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Subscrbe Section
+============================-->
+  <section id="subscribe">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 class="subscribe-title">Reserve Your Space</h3>
+          <p class="subscribe-text">Reserve your hotel room now. Book now and specify all the services you need so we can prepare for your stay before you arrive.</p>
+        </div>
+        <div class="col-md-4 subscribe-btn-container">
+          <a class="subscribe-btn" href="#RoomBook">Book Now</a>
+          <a href="#RoomBook">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Porfolio Section
+============================-->
+
+
+  <section id="portfolio">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Gallery</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">The gallery below is a glimpse of what you expect to find in our hotel</p>
+        </div>
+      </div>
+
+      <div class="row">
+
+
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="rooms">Rooms</button>
+            <button class="btn btn-default filter-button" data-filter="dining">Dining</button>
+            <button class="btn btn-default filter-button" data-filter="bar">Bar</button>
+            <button class="btn btn-default filter-button" data-filter="confrence">Confrence</button>
+            <button class="btn btn-default filter-button" data-filter="team">Team</button>
+        </div>
+        <br/>
+
+
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter rooms">
+                <img src="Pictures/Rooms/pic1.jpg" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter dining">
+                <img src="Pictures/Dining/pic2.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter rooms">
+                <img src="Pictures/Rooms/pic5.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter dining">
+                <img src="Pictures/Dining/pic6.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter dining">
+                <img src="Pictures/Dining/pic1.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter rooms">
+                <img src="Pictures/Rooms/pic12.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter rooms">
+                <img src="Pictures/Rooms/pic8.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter dining">
+                <img src="Pictures/Dining/pic5.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter team">
+                <img src="Pictures/Dining/pic1.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter bar">
+                <img src="Pictures/Bar/pic1.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter confrence">
+                <img src="Pictures/Confrence/pic1.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter rooms">
+                <img src="Pictures/Rooms/pic3.jpg" class="img-responsive">
+            </div>
+
+
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Testimonials Section
+============================-->
+
+
+  <section id="testimonials">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Testimonials</h3>
+          <div class="section-title-divider"></div>
+<!--          <p class="section-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p>-->
+        </div>
+      </div>
+
+        <div class="row">
+			<div class="col-md-8 col-md-offset-2">
+                <div class="quote"><img src="img/quote_sign_left.png" alt=""></div>
+				<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="6000">
+				  <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+				    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
+				  </ol>
+				  <!-- Carousel items -->
+				  <div class="carousel-inner" style="font-family: sans-serif; font-style: italic;">
+				    <div class="item">
+                        <img src="img/client-2.jpg" class="profile-circle">
+				    	<blockquote>
+				    		<p>My stay at the hotel was excellent. My favourite part of my stay there was the complimentarty buffet they served on a daily basis. It was a perfect quiet place for me to stay while I explored Embu Town. </p>
+				    	</blockquote>
+				    </div>
+				    <div class="item">
+                        <img src="img/client-1.jpg" class="profile-circle">
+				    	<blockquote>
+				    		<p>This is definitely my go to spot when I visit Embu now. I came here for a business meeting, I was most impressed by the concierge serves and how they took care of my requests before I arrived. I would recommend this place for anyone who stops the Town.</p>
+				    	</blockquote>
+				    </div>
+				    <div class="active item">
+                        <img src="img/client-2.jpg" class="profile-circle">
+				    	<blockquote>
+				    		<p>I have been travelling to Embu often and when I am around this is the best hotel of my choice to spend my night.</p>
+				    	</blockquote>
+				    </div>
+                    <div class="item">
+                        <img src="img/client-1.jpg" class="profile-circle">
+    			    	<blockquote>
+				    		<p>The rooms and service were great, I can complain. Cheers</p>
+				    	</blockquote>
+				    </div>
+                    <div class="item">
+                        <img src="img/client-2.jpg" class="profile-circle">
+    			    	<blockquote>
+				    		<p>The workers there are honest, I lost some of my valuables in a purse which included some money, but instead of hiding it they came and gave it back to me after they found it. Thanks a lot.</p>
+				    	</blockquote>
+				    </div>
+                    <div class="item">
+                        <img src="img/client-1.jpg" class="profile-circle">
+    			    	<blockquote>
+				    		<p>Made last minute bookings to come to your hotel and you were able to take care of things for me to the letter prior to my arrival. Thank you very much for your care.</p>
+				    	</blockquote>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+    </div>
+  </section>
+
+
+<!--==========================
+  Map Section
+============================-->
+
+
+<div class="map-clean">
+        <iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBBkKzSFz2tN1t3dv4eKC9570WPb785Tps&amp;q=slopes+villa+hotel&amp;zoom=15"></iframe>
+    </div>
+
+<!--==========================
+  Contact Section
+============================-->
+  <section id="contact">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Get In Touch</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">For more enquiries, feel free to reach us through the contact form below</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-push-2">
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>B6, Embu, Kenya</p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>slopesvilla@yahoo.com</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+254 68 2230148 <br/>+254 751 488777 <br/>020 2444096 </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-5 col-md-push-2">
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Footer
+============================-->
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; Copyright <strong>Website Mixology</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+              -->
+              Website by <a href="https://iamleonpeter.com/">WebsiteMixologists</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+    <script src="js/bootsnipp.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+
+</body>
+</html>
