@@ -1,0 +1,96 @@
+/*-------------------------------*/
+/*      Code snippet by          */
+/*      @maridlcrmn              */
+/*-------------------------------*/
+
+
+
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #03C4EB;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+
+
+
+.filter-button
+{
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    background-color: #03C4EB;
+    font-family: Raleway, sans-serif;
+    transition: background-color 0.3s;
+
+}
+.filter-button:hover
+{
+    border: 1px solid #03C4EB;
+    border-radius: 5px;
+    text-align: center;
+    color: #03C4EB;
+    background-color: white;
+    transition: background-color 0.3s;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+    background-image: url(/img/client-1.jpg);
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+
+
+
