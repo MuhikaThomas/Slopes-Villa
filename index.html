@@ -76,8 +76,8 @@
             <div>
                 <a href="#close" title="close" class="close">X</a>
 
-                <form id="booking-form" class="booking-form" name="form1" method="post" action="css/php/bookingform.php">
-                      <!-- <div align="center"><img class="logo" src="img/example_logo.png" title="Example Logo" alt="Example Logo"></div> -->
+                <form id="booking-form" class="BookingForm booking-form" name="form1" method="post" action="booksubmission.php">
+                      <!-- <div align="center"><img class="logo" src="img/favicon.ico" title="Example Logo" alt="Example Logo"></div> -->
                       <div class="h1">Hotel Reservation Form</div>
                       <div id="form-message" class="message hide">
                           Thank you for your enquiry!
@@ -155,11 +155,11 @@
                           </div>
                           <div class="group">
                               <label for="phone">Phone</label>
-                              <div><input id="phone" name="phone" class="form-control" type="text" placeholder="Phone"></div>
+                              <div><input id="phone" name="subject phone" class="form-control" type="text" placeholder="Phone"></div>
                           </div>
                           <div class="group">
                               <label for="special-requirements">Special requirements</label>
-                              <div><textarea id="special-requirements" name="special-requirements" class="form-control" cols="" rows="5" placeholder="Special requirements"></textarea></div>
+                              <div><textarea id="special-requirements" name="message special-requirements" class="form-control" cols="" rows="5" placeholder="Special requirements"></textarea></div>
                           </div>
                           <div class="group submit">
                               <label class="empty"></label>
@@ -171,10 +171,6 @@
 
             </div>
           </div>
-          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-          <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-          <script src="js/plugins.js"></script>
-          <script src="js/main.js"></script>
           <!-- end of form -->
 
 
@@ -611,13 +607,19 @@
   <script src="lib/stickyjs/sticky.js"></script>
   <script src="lib/easing/easing.js"></script>
 
-    <script src="js/bootsnipp.js"></script>
+  <script src="js/bootsnipp.js"></script>
 
   <!-- Template Specisifc Custom Javascript File -->
   <script src="js/custom.js"></script>
 
   <script src="contactform/contactform.js"></script>
 
+  <!-- Scripts for booking form -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="bookingform/bookingform.js"></script>
 
 </body>
 </html>
