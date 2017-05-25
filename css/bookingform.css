@@ -1,4 +1,4 @@
-.Bookings {
+/*.Bookings {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
 	top: 0;
@@ -21,15 +21,15 @@
 .Bookings > div {
 	width: 100%;
 	position: relative;
-	/*margin: 10% auto;*/
+	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
-	/*background: #fff;*/
-	/*background: -moz-linear-gradient(#fff, #999);
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
 	background: -o-linear-gradient(#fff, #999);*/
 }
-.close {
+/*.close {
 	background: #606061;
 	color: #FFFFFF;
 	line-height: 25px;
@@ -50,7 +50,7 @@
 .close:hover { background: #00d9ff; }
 .Bookings:hover{
   color: red;
-}
+}*/
 /*form styling*/
 
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
@@ -62,9 +62,6 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-.booking-form{
-  /*min-width: 650px*/
-}
 
 html,
 button,
@@ -82,14 +79,7 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
+
 /*
  * A better looking default horizontal rule
  */
@@ -138,6 +128,16 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+#bodycover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-image: url(img/hero-bg2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 /* Style Form*/
 div.ul-select-wrap {
   min-height: 34px;

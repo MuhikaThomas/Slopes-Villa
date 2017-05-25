@@ -334,7 +334,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   margin: 10px;
 }
-
+/*button opening the booking form*/
 #hero .btn-get-started {
   background: #03C4EB;
   border: 2px solid #03C4EB;
@@ -346,6 +346,12 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #fff;
   color: #fff;
 }
+#hero .btn-get-started:focus{
+	background: #03C4EB;
+	border: 2px solid #03C4EB;
+	color: #fff;
+}
+
 
 #hero .btn-services {
   border: 2px solid #fff;
