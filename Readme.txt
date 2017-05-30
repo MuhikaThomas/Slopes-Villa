@@ -1,6 +1,1 @@
-Thanks for downloading this theme!
-
-Theme Name: Imperial
-Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
+![Alt text](/Pictures/Hotel/pic1.jpg?raw=true "Slopes villa hotel")
