@@ -1,3 +1,23 @@
+<?php
+if(isset($_POST['submit'])){
+    $to = "tommuhyka@hotmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['name'];
+    $last_name = $_POST['phone'];
+    $message = $_post['message'];
+    $subject = "Booking Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $message;
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $message;
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +59,7 @@
 
 <body>
   <div id="bodycover">
-    <form id="booking-form" class="BookingForm booking-form" name="form1" method="post" action="">
+    <form id="booking-form" class="BookingForm booking-form" name="form1" method="post" action="bookingform.php">
           <!-- <div align="center"><img class="logo" src="img/logo4.png" title="Example Logo" alt="Example Logo"></div> -->
           <div class="h1">Hotel Reservation Form</div>
           <div id="form-message" class="message hide">
@@ -152,7 +172,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="bookingform/bookingform.js"></script>
+  <!-- <script src="bookingform/bookingform.js"></script> -->
 
 </body>
 </html>
